@@ -1,0 +1,97 @@
+:root{
+  --primary:#0B2B4E;
+  --secondary:#0B2B4E;
+  --tertiary:#CACACA;
+  --quarth:#999999;
+  --penta:#0B2B4E;
+  --sky-blue:#2F91E7;
+  --orange:#FF9900;
+  --bg-orange:#f7cf92;
+}
+.material-form-container {
+  /* padding: 20px; */
+  background-color: #ffffff;
+  border-radius: 8px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.nav-tabs .nav-link {
+  color: #000;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 3.5s;
+}
+ button .transition{
+  transition: background-color 3.5s;
+}
+button .transition:hover{
+  padding: 1rem 3rem;
+}
+
+ /* .nav-link:hover {
+  background-color: #f1f1f1;
+  border: none !important ;
+} */
+.bg-light-grey{
+  background-color: #F5F5F5 !important;
+}
+ .active-tab {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 0.3rem !important;
+  /* border-radius: 8px 8px 0 0; */
+}
+.inactive-tab{
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--quarth) !important;
+  border-radius: 0.3rem !important;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-cancel{
+  background-color: white !important;
+  border-radius: 0.3rem;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important; 
+  padding: 0.3rem 0.8rem;
+}
+/* .btn-cancel:hover{
+  background-color: white;
+  color: var(--primary);
+  padding: 0.4rem 1rem;
+} */
+.btn-primary{
+  background-color: var(--primary);
+  color: white;
+  border-radius: 0.3rem;
+  padding: 0.3rem 1rem;
+}
+/* .btn-primary:hover{
+  background-color: var(--primary) !important;
+} */
+
+.form-buttons .btn-primary {
+  background-color: #003049;
+  border: none;
+}
+
+.form-buttons .btn-outline-primary {
+  border-color: #003049;
+  color: #003049;
+}
+
+.form-buttons .btn-outline-primary:hover {
+  background-color: #f1f1f1;
+  color: #003049;
+}
+@media  screen and (max-width:576px) {
+  /* .input-text{
+    max-width: 15rem !important;
+  } */
+}
