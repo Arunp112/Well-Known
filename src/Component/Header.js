@@ -7,9 +7,10 @@ import { IoMenu } from "react-icons/io5";
 import Icon1 from "../Image/WellKnownIcon1.png"
 import Icon2 from "../Image/WellKnownMiddleIcon.png";
 import Icon3 from "../Image/WellKnownIcon3.png"
+import { Link } from "react-router-dom";
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -27,11 +28,11 @@ function Header() {
       </div>
       <div className="nav-list">
         <ul className={!isMenuOpen ? "nav-links active" : "nav-links"}>
-          <li onClick={toggleMenu}>Home</li>
+          <Link to={"/dashboard"} onClick={toggleMenu}>Home</Link>
         </ul>
       </div>
       <div className='d-flex gap-2'>
-        <span className="wellknown-icons">
+        <span className="wellknown-header-icons">
 
         <img src={Icon1} height="52px"/>
         <img src={Icon2} height="52px"/>

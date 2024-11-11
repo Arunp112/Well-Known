@@ -129,7 +129,12 @@
   align-items: start;
   gap: 3rem;
 }
-
+@media screen and (max-width: 860px){
+  .wellknown-header-icons{
+    display: none;
+  }
+  
+}
 @media screen and (max-width: 778px) {
   .dot-icon {
     display: none !important;
@@ -190,13 +195,13 @@
 }
 @media screen and (max-width: 485px) {
   .text-sm {
-    font-size: 12px !important;
+    font-size: 10px !important;
   }
   .text-md {
     font-size: 16px !important;
   }
   .text-xs {
-    font-size: 10px !important;
+    font-size: 9px !important;
   }
 }
 /* @media screen and (max-width:773px) {
