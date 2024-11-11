@@ -134,6 +134,7 @@
     display: none;
   }
   
+
 }
 @media screen and (max-width: 778px) {
   .dot-icon {
@@ -165,8 +166,11 @@
     height: 10rem;
     transition: background-color 0.5s ease;
   }
-  .wellknown-icons{
-    display: none;
+  /* .wellknown-icons{ */
+    /* display: none; */
+  /* } */
+  .wellknown-header-icons{
+    display: none !important ;
   }
   .nav-links.active {
     display: flex;
@@ -204,6 +208,7 @@
     font-size: 9px !important;
   }
 }
+
 /* @media screen and (max-width:773px) {
   .form-container{
     height: 40vh;

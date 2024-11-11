@@ -5,7 +5,7 @@ import "../Style/Sidebar.css";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-  const [activeIcon, setActiveIcon] = useState(null);
+  const [activeIcon, setActiveIcon] = useState("/dashboard");
   const navigate = useNavigate();
 
   // SVG icons as JSX
