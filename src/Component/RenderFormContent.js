@@ -35,7 +35,7 @@ const RenderFormContent = ({ activeTab }) => {
                 <input
                   type="text"
                   placeholder="Input text "
-                  className="form-input-section"
+                  className="form-input-section text-xs"
                 />
               </div>
             </Col>
@@ -46,7 +46,7 @@ const RenderFormContent = ({ activeTab }) => {
                 <input
                   type="text"
                   placeholder="Input text "
-                  className="form-input-section"
+                  className="form-input-section text-xs"
                 />
               </div>
             </Col>
@@ -76,7 +76,7 @@ const RenderFormContent = ({ activeTab }) => {
                 <input
                   type="text"
                   placeholder="Input text "
-                  className="form-input-section"
+                  className="form-input-section text-xs"
                 />
               </div>
             </Col>
@@ -87,7 +87,7 @@ const RenderFormContent = ({ activeTab }) => {
                 <input
                   type="text"
                   placeholder="Input text "
-                  className="form-input-section"
+                  className="form-input-section text-xs"
                 />
               </div>
             </Col>
@@ -97,7 +97,7 @@ const RenderFormContent = ({ activeTab }) => {
                 <input
                   type="date"
                   placeholder="Input text "
-                  className="form-input-section"
+                  className="form-input-section text-xs"
                 />
               </div>
             </Col>
@@ -107,7 +107,7 @@ const RenderFormContent = ({ activeTab }) => {
                 <input
                   type="input"
                   placeholder="Input text "
-                  className="form-input-section"
+                  className="form-input-section text-xs"
                 />
               </div>
             </Col>
@@ -144,7 +144,7 @@ const RenderFormContent = ({ activeTab }) => {
                 <input
                   type="text"
                   placeholder="Input text "
-                  className="form-input-section"
+                  className="form-input-section text-xs"
                 />
               </div>
             </Col>
@@ -155,7 +155,7 @@ const RenderFormContent = ({ activeTab }) => {
                 <input
                   type="text"
                   placeholder="Input text "
-                  className="form-input-section"
+                  className="form-input-section text-xs"
                 />
               </div>
             </Col>
@@ -255,7 +255,7 @@ const RenderFormContent = ({ activeTab }) => {
                 <input
                   type="date"
                   placeholder="Input text "
-                  className="form-input-section"
+                  className="form-input-section text-xs"
                 />
               </div>
             </Col>
