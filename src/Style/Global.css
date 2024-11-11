@@ -129,7 +129,15 @@
   align-items: start;
   gap: 3rem;
 }
+@media  screen and (max-width: 880px ) {
 
+  /* .wellknown-header-icon{
+    display: none !important ;
+  } */
+  .wellknown-header-icons{
+    display: none !important ;
+  }
+}
 @media screen and (max-width: 778px) {
   .dot-icon {
     display: none !important;
@@ -160,8 +168,11 @@
     height: 10rem;
     transition: background-color 0.5s ease;
   }
-  .wellknown-icons{
-    display: none;
+  /* .wellknown-icons{ */
+    /* display: none; */
+  /* } */
+  .wellknown-header-icons{
+    display: none !important ;
   }
   .nav-links.active {
     display: flex;
@@ -190,15 +201,16 @@
 }
 @media screen and (max-width: 485px) {
   .text-sm {
-    font-size: 12px !important;
+    font-size: 10px !important;
   }
   .text-md {
     font-size: 16px !important;
   }
   .text-xs {
-    font-size: 10px !important;
+    font-size: 9px !important;
   }
 }
+
 /* @media screen and (max-width:773px) {
   .form-container{
     height: 40vh;
