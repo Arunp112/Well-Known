@@ -6,7 +6,7 @@ import { BurgerMenu } from "../Image/Icons";
 import { IoMenu } from "react-icons/io5";
 import Icon1 from "../Image/WellKnownIcon1.png";
 import Icon2 from "../Image/WellKnownMiddleIcon.png";
-import Icon3 from "../Image/WellKnownIcon3.png";
+import Icon3 from "../Image/WellKnownIcon3.png"
 import { Link } from "react-router-dom";
 
 function Header () {

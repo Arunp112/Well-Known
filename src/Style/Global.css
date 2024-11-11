@@ -129,14 +129,12 @@
   align-items: start;
   gap: 3rem;
 }
-@media  screen and (max-width: 880px ) {
-
-  /* .wellknown-header-icon{
-    display: none !important ;
-  } */
+@media screen and (max-width: 860px){
   .wellknown-header-icons{
-    display: none !important ;
+    display: none;
   }
+  
+
 }
 @media screen and (max-width: 778px) {
   .dot-icon {

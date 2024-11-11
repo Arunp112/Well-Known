@@ -3,7 +3,9 @@ import React from 'react'
 function Cart() {
   return (
     <div className='text-center'>
-      Cart content
+      <h1>
+        Cart content
+        </h1>
     </div>
   )
 }
