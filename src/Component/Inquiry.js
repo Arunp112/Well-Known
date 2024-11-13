@@ -4,6 +4,9 @@ import { Table } from "react-bootstrap";
 import { Arrow } from "../Image/Icons";
 import { Link } from "react-router-dom";
 import InquiryList from "./InquiryList";
+import { VerticleIcon, PlusIcon } from "../Image/Icons";
+import { ForwordArrow, BackwordArrow } from "../Image/Icons";
+import Pagination from "./Pagination";
 
 const inquiryData = [
   {
@@ -49,7 +52,7 @@ const Inquiry = () => {
 
   return (
     <div className="">
-      <div className="inquiry-container ">
+      <div className="inquiry-container px-3 ">
         <InquiryList />
         {/* Tab Buttons */}
         <div className="tab-container bg-light-grey rounded-2">
@@ -73,7 +76,7 @@ const Inquiry = () => {
 
         {/* Filter Buttons - Only show for "New Inquiry" tab */}
         {activeTab === "New Inquiry" && (
-          <div className="status-filter py-3">
+          <div className="status-filter pt-3">
             {["New", "In Process", "Processed", "Draft"].map((status) => (
               <button
                 key={status}
@@ -90,16 +93,21 @@ const Inquiry = () => {
 
         {/* Table */}
       </div>
-      <Table hover className="inquiry-table tableCellRecord ">
+      <Table hover className="inquiry-table mt-3 tableCellRecord ">
         <thead>
           <tr style={{ backgroundColor: "lightgreen" }}>
             <th style={{ backgroundColor: "#F5F5F5", color: "#999999" }}>
-              <div className="th-arrow">
-                <span className="text-xs">Webcode </span>
-                <span className="pb-1">
-                  <Arrow />
-                </span>
+              {/* <div className="d-flex justify-content-center align-items-center"> */}
+              <div>
+                <div className="th-arrow ">
+                  <span className="text-xs">Webcode </span>
+                  <span className="pb-1">
+                    <Arrow />
+                  </span>
+                </div>
               </div>
+              {/* <span className="verticle-icon "><VerticleIcon /></span> */}
+              {/* </div> */}
             </th>
             <th style={{ backgroundColor: "#F5F5F5", color: "#999999" }}>
               <div className="th-arrow">
@@ -151,8 +159,36 @@ const Inquiry = () => {
         </tbody>
       </Table>
       <div className="px-3">
+        {/* <div className=" pagination-content-bottom">
+          <div>
+            <button className="pagination-btn">
+              <BackwordArrow />
+            </button>
+            <span className="p-1 border">01</span>
+            <button className="pagination-btn">
+              <ForwordArrow />
+            </button>
+          </div>
+          <span>
+            <button className="bg-blue p-auto ">
+              <PlusIcon />
+            </button>
+          </span>
+        </div> */}
+        <Pagination/>
         <div className=" height-full footer-content">
-          <div className="  pb-2 mt-3  ">
+          {/* <div className="d-flex justify-content-between">
+
+          <div>
+            <button className="pagination-btn"><BackwordArrow/></button>
+            <span className="p-1 border">01</span>
+            <button className="pagination-btn"><ForwordArrow/></button>
+          </div>
+          <span>
+            <button className="bg-blue p-auto "><PlusIcon/></button>
+          </span>
+          </div> */}
+          <div className="  pb-2 mt-3 bg-light-grey ">
             <div className="breadcrum-bottom text-xs bg-light-grey">
               <nav aria-label="breadcrum  ">
                 <ol class="breadcrumb m-0">

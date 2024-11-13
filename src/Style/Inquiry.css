@@ -1,5 +1,5 @@
 .inquiry-container {
-  padding:  3px 20px;
+  /* padding:  3px 20px; */
   font-family: Arial, sans-serif;
   /* display: flex; */
   /* justify-content: start; */
@@ -41,6 +41,24 @@
   border-right: 1px solid #dddddd;
   border-top: 1px solid #dddddd;
   border-radius: 6px;
+}
+.pagination-btn{
+  background: none;
+  border: none;
+}
+.pagination-content-bottom{
+  /* margin-top: 15rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: absolute; */
+  bottom: 0;
+}
+
+
+.verticle-icon{
+  align-self: flex-end;
+  /* margin-left: 4rem; */
 }
 /* Table tr{
   background-color: red !important;
