@@ -21,4 +21,41 @@ export const Arrow=()=>{
 </svg>
 
   )
-}
+} 
+
+
+ export const VerticleIcon=()=>{
+  return (
+    <svg width="2" height="19" viewBox="0 0 2 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1V12.5" stroke="#CACACA" stroke-linecap="round"/>
+</svg>
+
+  )
+ }
+
+ export const BackwordArrow=()=>{
+  return (
+    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.27649 7L7.71985 12.3773C8.09338 12.7485 8.09338 13.3504 7.71985 13.7216C7.34632 14.0928 6.74071 14.0928 6.36718 13.7216L0.280146 7.67216C-0.0933835 7.30093 -0.0933835 6.69906 0.280146 6.32784L6.36718 0.278417C6.74071 -0.0928059 7.34632 -0.0928059 7.71985 0.278417C8.09338 0.64964 8.09338 1.25151 7.71985 1.62273L2.27649 7Z" fill="#0B2B4E"/>
+</svg>
+
+  )
+ }
+
+ export const ForwordArrow=()=>{
+  return(
+    <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.72351 7L0.280148 12.3773C-0.0933826 12.7485 -0.0933826 13.3504 0.280148 13.7216C0.653679 14.0928 1.25929 14.0928 1.63282 13.7216L7.71985 7.67216C8.09338 7.30093 8.09338 6.69906 7.71985 6.32784L1.63282 0.278417C1.25929 -0.0928059 0.653678 -0.0928059 0.280147 0.278417C-0.0933831 0.64964 -0.0933831 1.25151 0.280147 1.62273L5.72351 7Z" fill="#0B2B4E"/>
+</svg>
+
+  )
+ }
+
+ export const PlusIcon=()=>{
+  return (
+    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.75 1V14M1 7.75L14 7.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+  )
+ }

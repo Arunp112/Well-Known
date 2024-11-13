@@ -16,7 +16,7 @@ function Dashboard() {
                 Dashboard
               </Link>
               <Link
-                to="/analysis "
+                to="/inquiryList "
                 class="breadcrumb-item text-decoration-none text-grey"
               >
                 Inquiry list
