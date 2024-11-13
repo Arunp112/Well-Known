@@ -36,6 +36,9 @@ button .transition:hover{
 .bg-light-grey{
   background-color: #F5F5F5 !important;
 }
+.tab{
+  width: 100%;
+}
  .active-tab {
   background-color: var(--primary) !important;
   color: #fff !important;

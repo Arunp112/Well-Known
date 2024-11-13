@@ -5,7 +5,7 @@ import "../Style/Sidebar.css";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-  const [activeIcon, setActiveIcon] = useState(null);
+  const [activeIcon, setActiveIcon] = useState(1);
   const navigate = useNavigate();
 
   // SVG icons as JSX
@@ -62,7 +62,7 @@ const Sidebar = () => {
         </svg>
       ),
       label: "Icon 2",
-      url:"/analysis",
+      url:"/inquiryList",
     },
     {
       id: 3,

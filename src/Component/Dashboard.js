@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
-    <div className="margin-dashboard height-full">
+    <div className="margin-dashboard height-full ">
       <div className="  pb-2 mt-3 px-3 ">
         <div className="breadcrum-top text-xs">
           <nav aria-label="breadcrum  ">
@@ -16,7 +16,7 @@ function Dashboard() {
                 Dashboard
               </Link>
               <Link
-                to="/inquiryList "
+                to="/analysis "
                 class="breadcrumb-item text-decoration-none text-grey"
               >
                 Inquiry list
