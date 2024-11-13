@@ -10,7 +10,7 @@ const MaterialForm = () => {
   // const tabs = ["Basic Detail", "Select Material", "Make Schedule"];
 
   return (
-    <div>
+    <div id="main">
       <Container fluid className="material-form-container mt-2   ">
         <div
           variant="tabs"
@@ -19,8 +19,10 @@ const MaterialForm = () => {
         >
           {["Basic Detail", "Select Material", "Make Schedule"].map((tab) => (
             <div key={tab} className="">
+              <Row>
+                <Col>
               <Button
-                className={`text-sm ${
+                className={` text-sm ${
                   activeTab === tab
                     ? "active-tab tansition"
                     : " inactive-tab transition"
@@ -29,11 +31,13 @@ const MaterialForm = () => {
               >
                 {tab}
               </Button>
+                </Col>
+              </Row>
             </div>
           ))}
         </div>
       </Container>
-      <div id="parent" className="bottom-shadow  form-height">
+      <div id="parent" className="pv-shadow  form-height">
         <Form className=" render-form ">
           {/* {renderFormContent()} */}
           <div className="mt-3">
@@ -67,7 +71,7 @@ const MaterialForm = () => {
           </div> */}
           {/* )}  */}
         </Form>
-        <div className="footer-container">
+        {/* <div className="footer-container">
           <div className="form-buttons d-flex justify-content-between pt-2 px-3 ">
             <button className="me-3 btn-cancel text-sm">Cancel</button>
             <button className=" btn-primary me-3 text-sm">Save</button>
@@ -93,7 +97,7 @@ const MaterialForm = () => {
               </ol>
             </nav>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* <FormContent/> */}
     </div>

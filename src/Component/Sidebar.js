@@ -62,7 +62,7 @@ const Sidebar = () => {
         </svg>
       ),
       label: "Icon 2",
-      url:"/analysis",
+      url:"/inquiryList",
     },
     {
       id: 3,

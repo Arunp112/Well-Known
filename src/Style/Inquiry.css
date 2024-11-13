@@ -1,0 +1,138 @@
+.inquiry-container {
+  padding:  3px 20px;
+  font-family: Arial, sans-serif;
+  /* display: flex; */
+  /* justify-content: start; */
+
+}
+
+.tab-container {
+  display: flex;
+  /* margin-bottom: 10px; */
+  /* display: flex; */
+  justify-content: start;
+  gap: 1rem;
+}
+.bg-light-grey{
+  background-color: #F5F5F5 !important;
+}
+.th-arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.tab {
+  /* flex: 1; */
+  padding: 5px 10px;
+  text-align: center;
+  /* border: 1px solid #ddd; */
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background:none;
+  transition: background-color 0.3s;
+  width: 15rem;
+}
+.tableCellRecord {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-top: 1px solid #dddddd;
+  border-radius: 6px;
+}
+/* Table tr{
+  background-color: red !important;
+} */
+
+.tab.active {
+  background-color: #0b2b4e;
+  
+  color: white;
+}
+
+.status-filter {
+  display: flex;
+  gap: 10px;
+  /* margin-bottom: 20px; */
+}
+
+.status-button {
+  /* padding: 8px 16px; */
+  
+  border: none;
+  /* background-color: none; */
+  color: #555;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  /* border-radius: 4px; */
+  background-color: #F5F5F5;
+  transition: background-color 0.3s;
+}
+
+.active-status-button {
+  /* background-color: #d1d5db; */
+  /* font-weight: bold; */
+  background-color: rgba(11, 43, 78, 0.1) !important;
+  color: #0b2b4e !important;
+  border: 1px solid #0b2b4e !important; 
+  
+ 
+  
+}
+
+.inquiry-table {
+  width: 100%;
+  /* border-collapse: collapse; */
+}
+
+.inquiry-table th,
+.inquiry-table td {
+  padding: 12px;
+  /* border: 1px solid #ddd; */
+  text-align: center;
+}
+
+.webcode-cell a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.status-cell {
+  text-align: center;
+}
+
+.status-label {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #ffecb3;
+  color: orange;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+/* .text-center {
+  text-align: center;
+} */
+/* .e{
+  background-color: purple ;
+} */
+.footer-content{
+  position: absolute;
+  bottom: 0;
+}
+@media screen and (max-width:765px) {
+  .status-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tab-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+

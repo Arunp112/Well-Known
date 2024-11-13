@@ -28,7 +28,8 @@ function Header () {
       </div>
       <div className="nav-list">
         <ul className={!isMenuOpen ? "nav-links active" : "nav-links"}>
-          <Link to={"/dashboard"} onClick={toggleMenu} >Home</Link>
+          <Link to={"/dashboard"} onClick={toggleMenu}>Home</Link>
+          <Link to={"/inquiryList"} onClick={toggleMenu}>Inquiry List</Link>
         </ul>
       </div>
       <div className="d-flex gap-2">

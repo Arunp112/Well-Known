@@ -6,24 +6,26 @@ import Header from "./Component/Header";
 import Sidebar from "./Component/Sidebar";
 import Analysis from "./Component/Analysis"
 import InquiryList from "./Component/InquiryList";
-import Cart from "./Component/Cart"; 
+import Cart from "./Component/Cart";
 import Custom from "./Component/Custom";
 import Footer from "./Component/Footer";
+import Breadcrum from "./Component/Breadcrum";
 
-function App() {
+function App () {
   return (
     <> <div>
 
-        <Header />
-        <Sidebar />
+      <Header />
+      <Sidebar />
       <Routes>
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/analysis" element={<Analysis/>}/>
-        <Route path="/inquiryList" element={<InquiryList/>}/>
-        <Route path="/custom" element={<Custom/>}/>
-        <Route path="/cart" element={<Cart/>}/>
+        <Route path="/inquiryList" element={<Analysis />} />
+        <Route path="/inquiryList" element={<InquiryList />} />
+        <Route path="/custom" element={<Custom />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
-      <Footer/>
+      {/* <Footer/> */}
+      {/* <Breadcrum/> */}
     </div>
     </>
   );
