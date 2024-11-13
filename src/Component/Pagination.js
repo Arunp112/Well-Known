@@ -24,7 +24,7 @@ function Pagination() {
             <button className="pagination-btn" onClick={handleDecrease}>
               <BackwordArrow />
             </button>
-            <span className="p-1 border">{count}</span>
+            <span className="p-1 border">{ count }</span>
             <button className="pagination-btn" onClick={handleIncrease}>
               <ForwordArrow />
             </button>
