@@ -14,8 +14,8 @@ const Sidebar = () => {
       id: 1,
       icon: (
         <svg
-          width="25"
-          height="25"
+          width="21"
+          height="21"
           viewBox="0 0 27 27"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -37,8 +37,8 @@ const Sidebar = () => {
       id: 2,
       icon: (
         <svg
-          width="25"
-          height="25"
+          width="21"
+          height="21"
           viewBox="0 0 27 27"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -68,8 +68,8 @@ const Sidebar = () => {
       id: 3,
       icon: (
         <svg
-          width="25"
-          height="25"
+          width="21"
+          height="21"
           viewBox="0 0 27 27"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -91,8 +91,8 @@ const Sidebar = () => {
       id: 4,
       icon: (
         <svg
-          width="25"
-          height="25"
+          width="21"
+          height="21"
           viewBox="0 0 28 28"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

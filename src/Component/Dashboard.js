@@ -1,10 +1,11 @@
 import React from "react";
 import MaterialForm from "./MaterialForm";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Dashboard() {
   return (
-    <div className="margin-dashboard height-full ">
+    <motion.div className="margin-dashboard height-full " initial={{x:"-100%"}} animate={{x:0}} transition={{duration: 0.5}}>
       <div className="  pb-2 mt-3 px-3 ">
         <div className="breadcrum-top text-xs">
           <nav aria-label="breadcrum  ">
@@ -36,7 +37,7 @@ function Dashboard() {
       <div>
         <MaterialForm />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

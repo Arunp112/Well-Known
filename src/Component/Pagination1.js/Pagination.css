@@ -1,0 +1,74 @@
+.pagination-container {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  /* padding-left: 4.5rem ; */
+  
+  align-items: center;
+  justify-content: space-between; /* Spreads pagination and plus button apart */
+  width: 100%; /*Ensures the plus button aligns to the right*/
+  /* max-width: 1100px; Optional: set a max width for better control */
+}
+.pagination-container-btn-bottom{
+  padding-left: 4.5rem;
+  padding-right: 1rem;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adds space between pagination elements */
+}
+
+.pagination-button {
+  border: none;
+  background: none;
+  color: #1A3E6E;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.page-info {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #6c757d;
+}
+
+.page-number {
+  padding: 4px 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.page-text {
+  margin-left: 8px;
+}
+
+.add-button {
+  background-color: #0b2b4e;
+  color: white;
+  font-size: 1.2em;
+  padding: 0.6em 0.6em;
+  border-radius: 4px;
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  /* margin-left: 16px; Adjust this for more space between pagination and the plus button */
+}
+
+
+
+@media screen and (max-width:778px) {
+
+  .pagination-container-btn-bottom{
+    padding: 0.8rem 0.8rem !important;
+  }
+  
+}
+
