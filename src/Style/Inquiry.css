@@ -3,7 +3,6 @@
   font-family: Arial, sans-serif;
   /* display: flex; */
   /* justify-content: start; */
-
 }
 
 .tab-container {
@@ -13,10 +12,10 @@
   justify-content: start;
   gap: 1rem;
 }
-.bg-light-grey{
-  background-color: #F5F5F5 !important;
+.bg-light-grey {
+  background-color: #f5f5f5 !important;
 }
-.th-arrow{
+.th-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +29,7 @@
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
-  background:none;
+  background: none;
   transition: background-color 0.3s;
   width: 15rem;
 }
@@ -42,21 +41,23 @@
   border-top: 1px solid #dddddd;
   border-radius: 6px;
 }
-.pagination-btn{
+.pagination-btn {
   background: none;
   border: none;
 }
-.pagination-content-bottom{
+.pagination-content-bottom {
   /* margin-top: 15rem; */
+
+  position: absolute;
+  bottom: 0;
+}
+.pagination-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: absolute; */
-  bottom: 0;
 }
 
-
-.verticle-icon{
+.verticle-icon {
   align-self: flex-end;
   /* margin-left: 4rem; */
 }
@@ -66,7 +67,7 @@
 
 .tab.active {
   background-color: #0b2b4e;
-  
+
   color: white;
 }
 
@@ -78,7 +79,7 @@
 
 .status-button {
   /* padding: 8px 16px; */
-  
+
   border: none;
   /* background-color: none; */
   color: #555;
@@ -86,7 +87,7 @@
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   /* border-radius: 4px; */
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   transition: background-color 0.3s;
 }
 
@@ -95,10 +96,11 @@
   /* font-weight: bold; */
   background-color: rgba(11, 43, 78, 0.1) !important;
   color: #0b2b4e !important;
-  border: 1px solid #0b2b4e !important; 
-  
- 
-  
+  border: 1px solid #0b2b4e !important;
+}
+.scrollable-content {
+  height: 60vh;
+  overflow-y: scroll;
 }
 
 .inquiry-table {
@@ -116,7 +118,17 @@
 .webcode-cell a {
   color: #007bff;
   text-decoration: none;
+  
 }
+.webcode-cell {
+  padding: 4px 8px;
+}
+.soldto {
+  padding: 4px 8px;
+}
+.materialgroup{
+  padding: 4px 8px;
+} 
 
 .status-cell {
   text-align: center;
@@ -137,20 +149,19 @@
 /* .e{
   background-color: purple ;
 } */
-.footer-content{
+.footer-content {
   position: absolute;
   bottom: 0;
 }
-@media screen and (max-width:765px) {
-  .status-filter{
+@media screen and (max-width: 765px) {
+  .status-filter {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .tab-container{
+  .tab-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
-

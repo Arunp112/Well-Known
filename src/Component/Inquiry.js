@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 import InquiryList from "./InquiryList";
 import { VerticleIcon, PlusIcon } from "../Image/Icons";
 import { ForwordArrow, BackwordArrow } from "../Image/Icons";
-import Pagination from "./Pagination";
+import Pagination from "../Component/Pagination1.js/Pagination1";
+import { motion } from "framer-motion";
 
 const inquiryData = [
   {
@@ -39,6 +40,31 @@ const inquiryData = [
     soldTo: "Omega Textiles",
     materialGroup: "FDYD",
   },
+  {
+    webcode: "W000075544",
+    status: "In Process",
+    soldTo: "Shruti Rayon",
+    materialGroup: "FDYD",
+  },
+  {
+    webcode: "W000073981",
+    status: "Processed",
+    soldTo: "Shree Umiya Yarn",
+    materialGroup: "FDY",
+  },
+  {
+    webcode: "W000076789",
+    status: "Draft",
+    soldTo: "Atlas Industries",
+    materialGroup: "FDYD",
+  },
+  {
+    webcode: "W000076010",
+    status: "New",
+    soldTo: "Omega Textiles",
+    materialGroup: "FDYD",
+  },
+  
 ];
 
 const Inquiry = () => {
@@ -93,7 +119,9 @@ const Inquiry = () => {
 
         {/* Table */}
       </div>
-      <Table hover className="inquiry-table mt-3 tableCellRecord ">
+      <div className="scrollable-content mt-3">
+
+      <motion.Table hover className="inquiry-table  tableCellRecord " initial={{x:"-100%"}} animate={{x:"0"}} transition={{duration:0.5}} exit={{x:"100"}}>
         <thead>
           <tr style={{ backgroundColor: "lightgreen" }}>
             <th style={{ backgroundColor: "#F5F5F5", color: "#999999" }}>
@@ -135,18 +163,23 @@ const Inquiry = () => {
             </th>
           </tr>
         </thead>
-        <tbody>
+        {/* <div className="scrollable-content border"> */}
+
+        <tbody >
           {filteredInquiries.length > 0 ? (
             filteredInquiries.map((inquiry, index) => (
               <tr key={index}>
-                <td className="webcode-cell text-xs">
+                <td >
+                  <span className="webcode-cell text-xs">
+
                   <a href={`#${inquiry.webcode}`}>{inquiry.webcode}</a>
+                  </span>
                 </td>
                 <td className="status-cell">
                   <span className="status-label text-xs">{inquiry.status}</span>
                 </td>
-                <td className="text-xs">{inquiry.soldTo}</td>
-                <td className="text-xs">{inquiry.materialGroup}</td>
+                <td ><span className="text-xs soldto">{inquiry.soldTo}</span></td>
+                <td ><span className="text-xs materialgroup">{inquiry.materialGroup}</span></td>
               </tr>
             ))
           ) : (
@@ -157,7 +190,9 @@ const Inquiry = () => {
             </tr>
           )}
         </tbody>
-      </Table>
+          {/* </div>  */}
+      </motion.Table>
+        </div>
       <div className="px-3">
         {/* <div className=" pagination-content-bottom">
           <div>
@@ -175,7 +210,9 @@ const Inquiry = () => {
             </button>
           </span>
         </div> */}
+        <div className="">
         <Pagination/>
+        </div>
         <div className=" height-full footer-content">
           {/* <div className="d-flex justify-content-between">
 
