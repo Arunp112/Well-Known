@@ -27,7 +27,7 @@ const Pagination1 = ({ totalPages = 20 }) => {
   }
 
   return (
-    <div className="pagination-container pagination-container-btn-bottom d-flex align-items-center gap-4 justify-content-between">
+    <div className="pagination-container pagination-container-btn-bottom d-flex align-items-center gap-4 justify-content-between mb-2">
       <div className="page-info d-flex align-items-center">
         <button
           variant=""
