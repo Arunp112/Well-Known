@@ -56,6 +56,36 @@ button .transition:hover{
 .form-buttons {
   display: flex;
   justify-content: space-between;
+  padding-left: 4.1rem;
+  padding-right: 1rem;
+  /* position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  /* left: 50%;
+  transform: translateX(-50%);
+  width: 100%; */ 
+}
+.button-tab{
+  width: 100%;
+}
+.button-bottom{
+  position: absolute;
+  bottom: 0; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.basic-tab{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  /* gap: 0.5rem; */
+}
+.absolute-bottom{
+  position :absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 1rem;
 }
 .btn-cancel{
   background-color: white !important;
@@ -97,4 +127,12 @@ button .transition:hover{
   /* .input-text{
     max-width: 15rem !important;
   } */
+}
+
+@media screen and (max-width:778px) {
+
+  .form-buttons{
+    padding: 0rem 0.8rem !important;
+  }
+  
 }

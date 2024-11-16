@@ -102,6 +102,9 @@
   height: 60vh;
   overflow-y: scroll;
 }
+.scrollable-content::-webkit-scrollbar{
+  display: none;
+}
 
 .inquiry-table {
   width: 100%;
@@ -151,7 +154,7 @@
 } */
 .footer-content {
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
 }
 @media screen and (max-width: 765px) {
   .status-filter {

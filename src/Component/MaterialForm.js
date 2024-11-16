@@ -21,16 +21,16 @@ const MaterialForm = () => {
             <div key={tab} className="">
               <Row>
                 <Col>
-              <Button
-                className={` text-sm ${
-                  activeTab === tab
-                    ? "active-tab tansition"
-                    : " inactive-tab transition"
-                }`}
-                onClick={() => setActiveTab(tab)}
-              >
-                {tab}
-              </Button>
+                  <Button
+                    className={` text-sm button-tab ${
+                      activeTab === tab
+                        ? "active-tab tansition"
+                        : " inactive-tab transition"
+                    }`}
+                    onClick={() => setActiveTab(tab)}
+                  >
+                    {tab}
+                  </Button>
                 </Col>
               </Row>
             </div>
@@ -44,7 +44,10 @@ const MaterialForm = () => {
             <RenderFormContent activeTab={activeTab} />
           </div>
           {/* {activeTab === "Basic Detail" && ( */}
-          {/* <div className="form-buttons d-flex justify-content-between pt-2 px-3 ">
+          {/* <div className="button-bottom">
+
+          
+          <div className="form-buttons d-flex justify-content-between pt-2 px-3 ">
             <button className="me-3 btn-cancel text-sm">Cancel</button>
             <button className=" btn-primary me-3 text-sm">Save</button>
           </div>
@@ -68,6 +71,7 @@ const MaterialForm = () => {
                 </li>
               </ol>
             </nav>
+          </div>
           </div> */}
           {/* )}  */}
         </Form>

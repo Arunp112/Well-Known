@@ -107,6 +107,9 @@ body{
   overflow-y: scroll;
   /* border: 1px solid black; comment */
 }
+.form-container::-webkit-scrollbar{
+  display: none;
+}
 .text-grey{
   color: var(--tertiary);
 }
@@ -149,13 +152,9 @@ body{
 }
 .breadcrum-bottom{
   display: none;
+  /* width: 100%; */
 }
-.basic-tab{
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  gap: 3rem;
-}
+
 @media screen and (max-width: 860px){
   .wellknown-header-icons{
     display: none;
@@ -211,6 +210,7 @@ body{
   }
   .breadcrum-bottom{
     display: block;
+    width: 100%;
   }
   .breadcrum-top{
     display: none;
